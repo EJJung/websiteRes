@@ -6,6 +6,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 
+//custom icons
+
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -22,6 +24,7 @@ import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
+
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -34,7 +37,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="EJ Jung"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
