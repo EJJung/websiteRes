@@ -49,6 +49,7 @@ export default function Parallax(props) {
       style={{
         ...style,
         backgroundImage: "url(" + image + ")",
+        // backgroundImage: "linear-gradient(#09203f, #537895)",
         transform: transform
       }}
     >

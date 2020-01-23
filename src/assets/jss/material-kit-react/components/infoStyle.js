@@ -4,14 +4,14 @@ import {
   dangerColor,
   successColor,
   infoColor,
-  roseColor,
+  // roseColor,
   grayColor,
-  title
+  // title
 } from "assets/jss/material-kit-react.js";
 
 const infoStyle = {
   infoArea: {
-    maxWidth: "360px",
+    maxWidth: "560px",
     margin: "0 auto",
     padding: "0px"
   },
@@ -36,7 +36,7 @@ const infoStyle = {
     color: infoColor
   },
   rose: {
-    color: roseColor
+    color: '#C2004D'
   },
   gray: {
     color: grayColor
@@ -49,12 +49,21 @@ const infoStyle = {
     color: grayColor,
     overflow: "hidden"
   },
-  title,
+  title: {
+    color: "#3C4858",
+    margin: "1.75rem 0 0.01rem",
+    textDecoration: "none",
+    fontWeight: "700",
+    fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+    textAlign:'left'
+  },
   description: {
     color: grayColor,
     overflow: "hidden",
     marginTop: "0px",
-    fontSize: "14px"
+    fontSize: "14px",
+    textAlign:'left',
+    lineHeight: '22px'
   },
   iconWrapperVertical: {
     float: "none"

@@ -29,7 +29,7 @@ export default function InfoArea(props) {
       </div>
       <div className={classes.descriptionWrapper}>
         <h4 className={classes.title}>{title}</h4>
-        <p className={classes.description}>{description}</p>
+        <p className={classes.description} style={{color:"#383838"}}>{description}</p>
       </div>
     </div>
   );

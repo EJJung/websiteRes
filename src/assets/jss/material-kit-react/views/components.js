@@ -7,8 +7,9 @@ const componentsStyle = {
     textAlign: "left"
   },
   title: {
+    fontFamily: "Roboto Slab, Times New Roman, serif",
     fontSize: "4.2rem",
-    fontWeight: "600",
+    fontWeight: "700",
     display: "inline-block",
     position: "relative"
   },

@@ -1,7 +1,7 @@
 {
-  "name": "material-kit-react",
+  "name": "ej-jung",
   "version": "1.8.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "description": "Journey for the Affective Life. Coded by Euijin Jung",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {
