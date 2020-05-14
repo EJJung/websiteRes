@@ -1,28 +1,29 @@
 import React from 'react';
-import unsplash from '../api/unsplash';
-import SearchBar from './SearchBar';
-import ImageList from './ImageList';
+
+import { ThemeProvider, CssBaseline } from '@material-ui/core';
 
 
-class App extends React.Component {
-  state = { images: [] };
+import { theme } from '../style/designScheme';
+import Header from './Header';
+import Banner from './Banner';
+import Roles from './Roles';
+import Features from './Features';
+import Projects from './Projects';
 
-  onSearchSubmit = async term => {
-    const response = await unsplash.get('/search/photos',{
-        params: { query: term }
-      });
+const App = () => {
 
-    this.setState({ images: response.data.results });
-  }
-
-  render() {
-    return (
-      <div className="ui container" style={{marginTop: '10px'}}>
-        <SearchBar onSubmit={this.onSearchSubmit} />
-        <ImageList images={this.state.images} />
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div>
+        <Header />
+        <Banner />
+        <Roles />
+        <Features />
+        <Projects />
       </div>
-    );
-  }
+    </ThemeProvider>
+  );
 }
 
 export default App;
