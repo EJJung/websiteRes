@@ -1,70 +1,19 @@
 import React, { useEffect, useState } from 'react';
 
-import { Typography, Grid, Box, Button, Divider } from '@material-ui/core';
+import { Typography, Grid, Box, Button, Grow, Divider } from '@material-ui/core';
 import { useStyles } from '../style/designScheme';
-
-class PollCard extends React.Component {
-  render() {
-    return (
-      <div>{`${this.props.poll.name} - ${this.props.poll.type}`}</div>
-    )
-  }
-}
-
-const dpolls = [
-  {
-    id: 4,
-    type: ['C', 'A'],
-    name: 'Test 1'
-  },
-  {
-    id:5,
-    type: ['B'],
-    name: 'Test 110'
-  },
-  {
-    id: 6,
-    type: ['A','B','C'],
-    name: 'Test 2'
-  },
-  {
-    id: 7,
-    type: ['A'],
-    name: 'Test 3'
-  },
-  {
-    id: 8,
-    type: ['A'],
-    name: 'Test 9'
-  },
-  {
-    id: 10,
-    type: ['C'],
-    name: 'Test 24'
-  },
-  {
-    id: 17,
-    type: ['B'],
-    name: 'Test 39'
-  }
-]
+import ProjCard, { CardContents } from './ProjCard';
 
 const Projects = () => {
   const classes = useStyles();
-  const [polls, setPolls] = useState(null);
-  const [filteredPolls, setfilteredPolls] = useState(null)
+  const [contents, setContents] = useState(null);
+  const [filteredContents, setfilteredContents] = useState(null)
   const [loading, setLoading] = useState(false);
   const [current, setCurrent] = useState('All')
-  const range = 30
-
-  console.log(filteredPolls);
 
   async function fetchMyAPI() {
-    let response = await fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=81f382d33088c6d52099a62eab51d967&language=en-US&page=1')
-    const json = await response.json()
-    // var data = json.filter(e => Date.parse(e.endDate) >= Date.parse(dateRange))
-    setPolls(dpolls);
-    setfilteredPolls(dpolls.filter(e => e.type === "A"));
+    setContents(CardContents);
+    setfilteredContents(CardContents);
     setLoading(true);
   }
 
@@ -76,27 +25,27 @@ const Projects = () => {
     return ("Loading...")
   }
 
-  var A = polls.filter(e => e.type.includes("A"))
-  var B = polls.filter(e => e.type.includes("B"))
-  var C = polls.filter(e => e.type.includes("C"))
+  var UX = contents.filter(e => e.type.includes("UX"))
+  var Development = contents.filter(e => e.type.includes("Dev"))
+  var Data = contents.filter(e => e.type.includes("Data"))
 
-  function showA() {
-    setfilteredPolls(A)
-    setCurrent('A')
+  function showUX() {
+    setfilteredContents(UX)
+    setCurrent('UX')
   }
 
-  function showB() {
-    setfilteredPolls(B)
-    setCurrent('B')
+  function showDev() {
+    setfilteredContents(Development)
+    setCurrent('Dev')
   }
 
-  function showC() {
-    setfilteredPolls(C)
-    setCurrent('C')
+  function showDat() {
+    setfilteredContents(Data)
+    setCurrent('Data')
   }
   
-  function removeFiter() {
-    setfilteredPolls(polls);
+  function removeFilter() {
+    setfilteredContents(contents);
     setCurrent('All')
   }
 
@@ -109,16 +58,22 @@ const Projects = () => {
         </Grid>
         <Box pb="10%" />
         <Grid item xs={12} md={12}>
-          <Button className={classes.notSelected} onClick={() => showA()}>Button A</Button>
-          <Button onClick={() => showB()}>Button B</Button>
-          <Button onClick={() => showC()}>Button C</Button>
-          <Button onClick={() => removeFiter()}>Remove Filter</Button>
+          <Button style={(current ==='All' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => removeFilter()}>All</Button>
+          <Button style={(current ==='UX' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => showUX()}>UX/UI</Button>
+          <Button style={(current ==='Dev' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => showDev()}>Development</Button>
+          <Button style={(current ==='Data' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => showDat()}>Data Analysis</Button>
         </Grid>
-        {filteredPolls && filteredPolls.map((poll) => (
-          <Grid item xs={12} md={4} key={poll.id}>
-            <PollCard poll={poll} />
-            <Divider />
-          </Grid>
+        {filteredContents && filteredContents.map((content) => (
+          <Grow 
+            in={true}
+            key={content.id+content.type}
+            style={{ transformOrigin: '0 0 0' }}
+            {...(current ? { timeout: 1000 } : {})}
+          >
+            <Grid item xs={12} md={4} key={content.id}>
+              <ProjCard content={content} />
+            </Grid>
+          </Grow>
           )
         )}
       </Grid>

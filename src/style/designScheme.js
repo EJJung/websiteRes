@@ -1,4 +1,4 @@
-import { MuiThemeProvider, createMuiTheme, responsiveFontSizes, makeStyles, withStyles } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes, makeStyles, withStyles } from '@material-ui/core/styles';
 import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
 import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -158,6 +158,29 @@ export const useStyles = makeStyles (theme => ({
         '& > *': {
             margin: theme.spacing(0.5),
         },
+    },
+    projCard: {
+        display: 'flex',
+        justifyContent:'center'
+    },
+    projOverTxt: {
+        color:'#212121',
+        transition: '0.25s'
+    },
+    projOverImg: {
+        maxWidth:'50%',
+        transition: '0.25s'
+    },
+    projOutTxt: {
+        color: '#9e9e9e',
+        transition: '0.25s',
+        opacity:'30%'
+    },
+    projOutImg: {
+        maxWidth:'50%',
+        transition: '0.25s',
+        filter: 'grayscale(100%)',
+        opacity:'10%'
     },
     button: {
         width: "140px",

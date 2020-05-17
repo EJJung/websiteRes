@@ -9,6 +9,7 @@ import Banner from './Banner';
 import Roles from './Roles';
 import Features from './Features';
 import Projects from './Projects';
+import Footer from './Footer';
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
         <Roles />
         <Features />
         <Projects />
+        <Footer />
       </div>
     </ThemeProvider>
   );
