@@ -26,12 +26,18 @@ const Projects = () => {
   }
 
   var UX = contents.filter(e => e.type.includes("UX"))
+  var UI = contents.filter(e => e.type.includes("UI"))
   var Development = contents.filter(e => e.type.includes("Dev"))
   var Data = contents.filter(e => e.type.includes("Data"))
 
   function showUX() {
     setfilteredContents(UX)
     setCurrent('UX')
+  }
+
+  function showUI() {
+    setfilteredContents(UI)
+    setCurrent('UI')
   }
 
   function showDev() {
@@ -52,14 +58,15 @@ const Projects = () => {
   return (
     <div className={classes.root}>
       <Box pt="20%" />
-      <Grid container direction="row" justify="flex-start" alignItems="center" spacing={3}>
+      <Grid container direction="row" justify="flex-start" alignItems="center" spacing={6}>
         <Grid item xs={12} md={12}>
           <Typography variant='h2' align='center' gutterBottom>Projects</Typography>
         </Grid>
         <Box pb="10%" />
         <Grid item xs={12} md={12}>
           <Button style={(current ==='All' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => removeFilter()}>All</Button>
-          <Button style={(current ==='UX' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => showUX()}>UX/UI</Button>
+          <Button style={(current ==='UX' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => showUX()}>UX</Button>
+          <Button style={(current ==='UI' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => showUI()}>UI</Button>
           <Button style={(current ==='Dev' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => showDev()}>Development</Button>
           <Button style={(current ==='Data' ? {color:'#212121'}:{color:'#9e9e9e'})} onClick={() => showDat()}>Data Analysis</Button>
         </Grid>
@@ -72,7 +79,9 @@ const Projects = () => {
           >
             <Grid item xs={12} md={4} key={content.id}>
               <ProjCard content={content} />
+              <Box pb="10%" />
             </Grid>
+            
           </Grow>
           )
         )}

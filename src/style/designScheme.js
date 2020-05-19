@@ -168,19 +168,19 @@ export const useStyles = makeStyles (theme => ({
         transition: '0.25s'
     },
     projOverImg: {
-        maxWidth:'50%',
+        // maxWidth:'50%',
         transition: '0.25s'
     },
     projOutTxt: {
         color: '#9e9e9e',
         transition: '0.25s',
-        opacity:'30%'
+        opacity:'0%'
     },
     projOutImg: {
-        maxWidth:'50%',
+        // maxWidth:'50%',
         transition: '0.25s',
         filter: 'grayscale(100%)',
-        opacity:'10%'
+        opacity:'20%'
     },
     button: {
         width: "140px",
