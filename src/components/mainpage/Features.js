@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Grid, Box, Link, Chip, Hidden } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
-import { useStyles } from '../style/designScheme';
+import { useStyles } from '../../style/designScheme';
 
 const featureList = [
   {
@@ -30,8 +30,16 @@ function FeatureSection(props) {
     <div className={classes.featureSection} style={{background:color}}>
       <div className={classes.root}>
         <Grid container direction="row" justify="center" alignItems="flex-start" spacing={3}>
-          <Grid item xs={12} md={5}>
-            <Box pt='50%' />
+          <Grid item xs={12}>
+          <Box pt="15%" />
+          </Grid>
+          <Hidden smDown>
+          <Grid item md={6}>
+            <Box pt="10%" />
+              <img src={img} alt={title} style={{maxWidth:'100%'}} />
+          </Grid>
+          </Hidden>
+          <Grid item xs={12} md={6}>
             <Typography variant='overline'>{overline}</Typography>
             <Typography variant='h2' style={{fontSize:'3rem'}}>{title}</Typography>
             <Typography variant='body1' gutterBottom>{summary}</Typography>
@@ -47,8 +55,7 @@ function FeatureSection(props) {
                 label={tag}
                 key={tag}
                 onClick={handleClick}
-              />
-              ) 
+              />) 
             )}
             </div>
             <Box pb='10%' />
@@ -60,13 +67,6 @@ function FeatureSection(props) {
                 <Link href={externalLink} color='textPrimary'><Typography variant='button'>visit site</Typography><ArrowForwardIosIcon fontSize='inherit' /></Link>
               </Grid>
             </Grid>
-            <Box pb='30%' />
-          </Grid>
-          <Grid item md={7}>
-            <Box pt="30%" />
-            <Hidden smDown>
-              <img src={img} alt={title} style={{maxWidth:'100%'}} />
-            </Hidden>
           </Grid>
         </Grid>
       </div>

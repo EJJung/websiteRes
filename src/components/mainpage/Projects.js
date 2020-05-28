@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { Typography, Grid, Box, Button, Grow, Divider } from '@material-ui/core';
-import { useStyles } from '../style/designScheme';
+import { useStyles } from '../../style/designScheme';
 import ProjCard, { CardContents } from './ProjCard';
 
 const Projects = () => {
@@ -58,7 +58,7 @@ const Projects = () => {
   return (
     <div className={classes.root}>
       <Box pt="20%" />
-      <Grid container direction="row" justify="flex-start" alignItems="center" spacing={6}>
+      <Grid container direction="row" justify="flex-start" alignItems="flex-start" spacing={6}>
         <Grid item xs={12} md={12}>
           <Typography variant='h2' align='center' gutterBottom>Projects</Typography>
         </Grid>

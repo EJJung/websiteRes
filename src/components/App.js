@@ -1,29 +1,34 @@
 import React from 'react';
 
 import { ThemeProvider, CssBaseline } from '@material-ui/core';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 import { theme } from '../style/designScheme';
-import Header from './Header';
-import Banner from './Banner';
-import Roles from './Roles';
-import Features from './Features';
-import Projects from './Projects';
-import Footer from './Footer';
+import history from './history';
+import Header from './utils/Header';
+import MainpageSum from './mainpage/mainpageSum';
+import { AboutSum } from './About/AboutSum';
+import { WorkSum } from './Works/WorkSum';
 
 const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div>
+      <Router history={history}>
         <Header />
-        <Banner />
-        <Roles />
-        <Features />
-        <Projects />
-        <Footer />
-      </div>
+        <Switch>
+          <Route exact path='/' component={MainpageSum}/>
+          <Route path='/works' component={WorkSum} />
+          <Route path='/about' component={AboutSum} />
+        </Switch>
+      </Router>
+      
     </ThemeProvider>
   );
 }

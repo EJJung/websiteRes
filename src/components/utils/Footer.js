@@ -4,7 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
 
-import { useStyles } from '../style/designScheme';
+import { useStyles } from '../../style/designScheme';
 
 const Footer = () => {
   const classes = useStyles();

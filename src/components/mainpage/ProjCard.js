@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Grid, Hidden, Paper, Card, CardActionArea, CardMedia, CardContent, CardActions, withWidth } from '@material-ui/core';
 
-import { useStyles } from '../style/designScheme';
+import { useStyles } from '../../style/designScheme';
 
 export const CardContents = [
   {
@@ -21,10 +21,10 @@ export const CardContents = [
   },
   {
     id: 3,
-    type: ['UI'],
-    icon: 'eyeGuide.svg',
-    name: 'eyeGuide',
-    desc: 'A platform that help patients change their behavior over their glaucoma and remember to take glaucoma medication'
+    type: ['Data'],
+    icon: 'correlation.svg',
+    name: 'Correlation between Sentimant Analysis in Notes of Health Practitioners and Medical Prescription',
+    desc: 'Apply NLP methods to healthcare data'
   },
   {
     id: 4,
@@ -34,46 +34,81 @@ export const CardContents = [
     desc: 'A commuter-to-commuter ridesharing service for low-income population'
   },
   {
-    id: 4,
+    id: 5,
+    type: ['UI'],
+    icon: 'eyeGuide.svg',
+    name: 'eyeGuide',
+    desc: 'A platform that help patients change their behavior over their glaucoma and remember to take glaucoma medication'
+  },
+  {
+    id: 6,
     type: ['UX'],
     icon: 'beams.svg',
     name: 'Beams consulting',
     desc: 'A consulting for a platform of participant recruitment program to increase retension rate'
   },
   {
-    id: 6,
+    id: 7,
     type: ['UX','UI'],
     icon: 'healthHub.svg',
     name: 'Radnet.kr',
     desc: 'A health information exchange service that shares medical images and meta data through cloud based sharing and real-time image reading'
   },
   {
-    id: 7,
+    id: 8,
     type: ['UX','UI'],
     icon: 'ma.svg',
     name: 'TV - Mobile App 2.0',
     desc: 'Applications to seamlessly enjoy TV contents with multiscreen'
   },
   {
-    id: 8,
+    id: 9,
     type: ['UI'],
     icon: 'shahid.svg',
     name: 'Shahid TV App',
     desc: 'A live and VOD contents streaming application built in Set top box'
   },
   {
-    id: 9,
+    id: 10,
     type: ['UI'],
     icon: 'bxr.svg',
     name: 'Boxer HD+2 Default UI',
     desc: 'UI specification for Set top box'
   },
   {
-    id: 10,
+    id: 11,
+    type: ['Data'],
+    icon: 'crowdSourcing.svg',
+    name: 'Crowdsourcing and Annotation',
+    desc: 'Practice of using crowdsourcing: enhance public discourse with crowdsourcing by learning civility in online platform'
+  },
+  {
+    id: 12,
+    type: ['Data'],
+    icon: 'lda.svg',
+    name: 'Latent Dirchlet Allocation',
+    desc: 'Practice of topic modeling: LDA - algorithm to assign words to related topic in unsupervised learning'
+  },
+  {
+    id: 13,
+    type: ['Data'],
+    icon: 'cykParser.svg',
+    name: 'Parse and Write Grammatical Texts',
+    desc: 'Practice of building parser: CYK Parser - parse probabilistic context-free grammars and write sentences that grammatically correct'
+  },
+  {
+    id: 14,
+    type: ['Data'],
+    icon: 'wordembedding.svg',
+    name: 'Word Embeddings',
+    desc: 'Practice of building vocabularies with contextual representations: Word2vec - to find patterns between words that has mutations'
+  },
+  {
+    id: 15,
     type: ['Data'],
     icon: 'classifier.svg',
-    name: 'Simple Classification',
-    desc: 'Practice of building bare-bone implementations: Naive Bayes and Logistic Regression'
+    name: 'Classification',
+    desc: 'Practice of building a simple classification tool of words: Naive Bayes and Logistic Regression'
   },
 ]
 
@@ -91,7 +126,7 @@ function ProjCard(props) {
   }
 
   return (
-    <Card style={{maxWidth:345,background:'none'}} elevation='none'>
+    <Card style={{maxWidth:345,background:'none'}} elevation={0} >
       <CardActionArea
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}

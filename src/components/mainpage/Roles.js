@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Typography, Grid, Box } from '@material-ui/core';
 
-import { useStyles } from '../style/designScheme';
+import { useStyles } from '../../style/designScheme';
 
 const contents =[
   {
