@@ -17,7 +17,7 @@ const Banner = () => {
         <Grid item xs={12} md={7}>
         <Box pt="40%" />
           <Typography variant='h2' gutterBottom>Euijin Jung</Typography>
-          <Typography variant='h5'>Warm-harted Innovator</Typography>
+          <Typography variant='h5'>Warm-hearted Innovator</Typography>
           <Typography variant='body2' gutterBottom>User Experience Designer, Front-end Developer, Data Analyist</Typography>
           <div className={classes.socialSpacing}>
             <Link href="https://www.linkedin.com/in/ejjung79/" target="_blank"><LinkedInIcon className={classes.linkedInIcon} /></Link>

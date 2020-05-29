@@ -200,6 +200,15 @@ export const useStyles = makeStyles (theme => ({
         width: "140px",
         margin: theme.spacing(1)
     },
+    test:{
+        background: `url('/imgs/photoEJ2.png')`,
+        width: 541,
+        height: 1066,
+        transition: '0.2s',
+        '&:hover': {
+            background:`url(/imgs/decoEJ.png)`,
+        }
+    },
     footer: {
         position: 'relative',
         maxWidth: '1280px',
