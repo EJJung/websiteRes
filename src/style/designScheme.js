@@ -182,6 +182,15 @@ export const useStyles = makeStyles (theme => ({
         filter: 'grayscale(100%)',
         opacity:'20%'
     },
+    AboutGridRoot: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+        overflow: 'hidden',
+    },
+    AboutGridTile: {
+        width: '70%'
+    },
     button: {
         width: "140px",
         height: "36px"

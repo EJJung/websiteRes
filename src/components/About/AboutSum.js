@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Typography, Grid, Box, Link, Icon } from '@material-ui/core';
+import { Typography, Grid, GridList, GridListTile, Box, Link, Icon } from '@material-ui/core';
+import ReactPlayer from 'react-player';
 
 import { useStyles } from '../../style/designScheme';
+import { TileInfo } from './TileInfo';
 import Footer from '../utils/Footer';
 
 export const AboutSum = () => {
@@ -38,6 +40,18 @@ export const AboutSum = () => {
           <Typography variant='body1' align='justify' paragraph>I am based in Michigan, but originally from Seoul, Korea. </Typography>
         </Grid>
       </Grid>
+      <Box pb="10%" />
+      <div className={classes.AboutGridRoot}>
+        <GridList spacing={1} cols={3} className={classes.AboutGridTile}>
+        {TileInfo.map((tile) => (
+          <GridListTile key={tile.title} cols={tile.cols} rows={tile.rows}>
+            {tile.type==='img' ? 
+            <img src={tile.location} alt={tile.title} />
+            : <ReactPlayer url={tile.location} light controls width='100%' height='100%'/>}
+          </GridListTile>
+        ))}
+        </GridList>
+      </div>
       <Box pb="10%" />
       <Footer />
     </div>
