@@ -1,9 +1,11 @@
 import React from 'react';
 
+import ComingSoon from '../../utils/Construction';
+
 export const WordEmbeddingSum = () => {
   return(
     <div>
-      Word Embeddings and Word Mutation.
+      <ComingSoon />
     </div>
   )
 }

@@ -1,9 +1,11 @@
 import React from 'react';
 
+import ComingSoon from '../../utils/Construction';
+
 export const MobileAppSum = () => {
   return(
     <div>
-      MobileAppSum
+      <ComingSoon />
     </div>
   )
 }
