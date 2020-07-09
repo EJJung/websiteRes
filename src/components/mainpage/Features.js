@@ -12,7 +12,7 @@ const featureList = [
     summary: 'Your Personalize Breast Cancer Report',
     desc: 'Know the details of your breast cancer, including treatment options, tests, and all the actions that you should take to get the best care possible. No need to type in your information at all. We take care of everything for you.',
     tags: ["Service Design", "UX","UI","Javascript", "React", "Data Analyzation"],
-    detailLink: '#',
+    detailLink: '/yerbba',
     externalLink: 'https://yerbba.com',
     img: '/imgs/yerbba.png'
   }

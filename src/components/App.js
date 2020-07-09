@@ -11,6 +11,7 @@ import {
 import { theme } from '../style/designScheme';
 import history from './history';
 import Header from './utils/Header';
+import Footer from './utils/Footer';
 import MainpageSum from './mainpage/mainpageSum';
 import { AboutSum } from './About/AboutSum';
 import { WorkSum } from './worksPage/WorkSum';
@@ -58,6 +59,7 @@ const App = () => {
           <Route path='/nlp-word-embeddings' component={WordEmbeddingSum} />
           <Route path='/word-classification' component={NaiveBayesSum} />
         </Switch>
+        <Footer />
       </Router>
       
     </ThemeProvider>

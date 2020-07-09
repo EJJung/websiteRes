@@ -64,13 +64,13 @@ const initTheme = createMuiTheme({
         letterSpacing: 0.25
       },
       subtitle1: {
-        fontFamily: 'Merriweather',
+        fontFamily: 'Open Sans',
         fontSize: '1rem',
         fontWeight: 400,
         letterSpacing: 0.15
       },
       subtitle2: {
-        fontFamily: 'Merriweather',
+        fontFamily: 'Open Sans',
         fontSize: '0.875rem',
         fontWeight: 400,
         letterSpacing: 0
@@ -249,6 +249,28 @@ export const useStyles = makeStyles (theme => ({
         fontWeight: 400,
         letterSpacing: 0.4
     },
+    projsub2: {
+        fontWeight: 500,
+        color: 'rgba(255, 255, 255, 0.5)'
+    },
+    projSummary: {
+        fontWeight: 600,
+        color: 'rgba(255, 255, 255, 0.7)',
+        lineHeight:'3rem',
+        letterSpacing: 1
+    },
+    projHeading:{
+        flexBasis: '40%',
+        flexShrink: 0,
+        margin: 'auto 0'
+    },
+    projsubtitle: {
+        color: theme.palette.text.secondary,
+        margin: 'auto 0',
+        flexBasis:'40%',
+        flexShrink: 0,
+        lineHeight: '1.5rem'
+    }
 }))
 
 export const ExpansionPanel = withStyles({
