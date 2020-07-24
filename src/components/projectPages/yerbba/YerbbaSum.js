@@ -27,7 +27,7 @@ const CustomizedExpansionPanels = ({text, contributors, setSelectedFeature}) => 
         >
           <Typography variant='h6' className={classes.projHeading}>{text['title']}</Typography>
           <Typography variant='subtitle2' className={classes.projsubtitle}>{text['sub1']}</Typography>
-          <AvatarGroup max={5}>
+          <AvatarGroup max={4}>
             {contributors.map(person => (
               <Avatar alt={person} src={"/icons/yerbba/"+person+".svg"} />
             ))}
