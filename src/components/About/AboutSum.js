@@ -53,7 +53,6 @@ export const AboutSum = () => {
         </GridList>
       </div>
       <Box pb="10%" />
-      <Footer />
     </div>
   )
 }
