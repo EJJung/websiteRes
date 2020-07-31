@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Typography, Grid, Box, Chip, Link, Avatar } from '@material-ui/core';
 
 import { useStyles, theme, ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails } from '../../../style/designScheme';
+import StartUp from './StartUp';
+import BizIdea from './BizIdea';
+import Prototypes from './Prototypes';
+import Product from './Product';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
@@ -18,7 +22,7 @@ const CustomizedExpansionPanels = ({text, contributors, setSelectedFeature}) => 
 
   return (
     <Grid container direction="row" justify="center" alignItems="center">
-      <Grid item xs={8}>
+      <Grid item xs={10}>
         <ExpansionPanel square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary 
           expandIcon={<ExpandMoreIcon />} 
@@ -62,7 +66,7 @@ export const YerbbaSum = () => {
       contributors: ['Beltran Figueroa', 'Brian Chen', 'Josh Vo', 'Jenny Choi', 'WeiYau Tee'],
       text: {
       'subtitle':"Inspired by Knowledge Grid project, started discusses for viable business ideas", 
-      'contents':"The information in your report is specific to you. Details about your options include length of treatment, questions to ask your doctors, frequent side effects, and other pros and cons to consider."
+      'contents':<StartUp />
     },
       setFeature: setFirstSelectedFeature,
     },
@@ -70,8 +74,8 @@ export const YerbbaSum = () => {
       title: "Confirm Business Idea",
       contributors: ['Beltran Figueroa', 'Brian Chen'],
       text: {
-        'subtitle':"You are Unique, So is Your Cancer", 
-        'contents':"Treatment of breast cancer is based on the unique features of each person's cancer. Yerbba explains what features of your cancer play a role in your treatment options."
+        'subtitle':"Spot out to one idea, share it to people and evolve it", 
+        'contents':<BizIdea />
       },
       setFeature: setSecondSelectedFeature,
     },
@@ -79,8 +83,8 @@ export const YerbbaSum = () => {
       title: "Develop Prototypes",
       contributors: ['Aaron Pearson', 'Duo Chen', 'Eddie Yoon', 'Carlo Sugatan', 'Sally Lee'],
       text: {
-        'subtitle':"Updated As your Treatment Progresses", 
-        'contents':"Your report is updated automatically as your treatment continues. For example, after you visit a doctor, have a new test result, undergo surgery, or receive a new prescription."
+        'subtitle':"Build dashboard(s) about breast cancer for patients based on their medical records", 
+        'contents':<Prototypes />
       },
       setFeature: setThirdSelectedFeature,
     },
@@ -88,17 +92,17 @@ export const YerbbaSum = () => {
       title: "Develop Product",
       contributors: ['Beltran Figueroa', 'Chloe Canon', 'Jennifer Griggs', 'Eddie Yoon', 'Brian Flaherty', 'Alexa Yi', 'Sally Lee'],
       text: {
-        'subtitle':"Quick and Easy", 
-        'contents':"Yerbba is easy to use. All you have to do is create an account, which takes less than 5 minutes. Yerbba then generates your health report automatically for you."
+        'subtitle':"Make project into product: Leveling information and allocating information user friendly.", 
+        'contents':<Product />
     },
       setFeature: setFourthSelectedFeature,
     },
     {
       title: "Product Live!",
-      contributors: ['All'],
+      contributors: ['Beltran Figueroa'],
       text: {
-        'subtitle':"Now let's tell the others", 
-        'contents':"Yerbba is easy to use. All you have to do is create an account, which takes less than 5 minutes. Yerbba then generates your health report automatically for you."
+        'subtitle':"Product is live!", 
+        'contents':"Details are protected by NDA. I am coming with general story."
     },
       setFeature: setFifthSelectedFeature,
     },

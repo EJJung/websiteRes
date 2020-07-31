@@ -13,7 +13,6 @@ const MainpageSum = () => {
       <Roles />
       <Features />
       <Projects />
-      <Footer />
     </div>
   )
 }

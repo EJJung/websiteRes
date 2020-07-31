@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player';
 
 import { useStyles } from '../../style/designScheme';
 import { TileInfo } from './TileInfo';
-import Footer from '../utils/Footer';
 
 export const AboutSum = () => {
   const classes = useStyles();
