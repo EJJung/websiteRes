@@ -24,12 +24,12 @@ const Product = () => {
       </Grid>
       <Grid item xs={10}>
         <Typography variant='body1' gutterBottom>
-          While design team was working on new design, development team converted data exchange system and base language from Python to Javascript. Since we wanted to build the web application, using Javascript seemed the right way to go. 
+          While design team was working on new design, development team converted data exchange system and base language from Python to Javascript. We used to use Python for backend. However, since we wanted to build the web application, using Javascript seemed the right way to go. 
         </Typography>
       </Grid>
       <Grid item xs={10}>
         <Typography variant='body1' gutterBottom>
-          The development tasks consists with three major parts: proper data retrieval, match data to relevant payloads, and proper information representation to user. I can't reveal how we build them in detail. I can say we used javascript based web frameworks such as React.JS in frontend and REST API based works in backend. 
+          The development tasks consisted with three major parts: proper data retrieval, match data to relevant payloads, and proper information representation to user. I can't reveal how we build them in detail. I can say we used javascript based web frameworks such as React.JS in frontend and REST API based works in backend. I took in charge of frontend design and development. Beltran took backend and Eddie helped him.
         </Typography>
       </Grid>
     </Grid>

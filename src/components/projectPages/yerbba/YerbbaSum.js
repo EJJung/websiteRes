@@ -6,6 +6,7 @@ import StartUp from './StartUp';
 import BizIdea from './BizIdea';
 import Prototypes from './Prototypes';
 import Product from './Product';
+import ProductLive from './ProductLive';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
@@ -102,7 +103,7 @@ export const YerbbaSum = () => {
       contributors: ['Beltran Figueroa'],
       text: {
         'subtitle':"Product is live!", 
-        'contents':"Details are protected by NDA. I am coming with general story."
+        'contents':<ProductLive />
     },
       setFeature: setFifthSelectedFeature,
     },
