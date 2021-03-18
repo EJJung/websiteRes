@@ -18,7 +18,7 @@ const Banner = () => {
         <Box pt="40%" />
           <Typography variant='h2' gutterBottom>Euijin Jung</Typography>
           <Typography variant='h5'>Warm-hearted Innovator</Typography>
-          <Typography variant='body2' gutterBottom>User Experience Designer, Front-end Developer, Data Analyist</Typography>
+          <Typography variant='body2' gutterBottom>User Experience Designer, Front-end Developer, Data Analyst</Typography>
           <div className={classes.socialSpacing}>
             <Link href="https://www.linkedin.com/in/ejjung79/" target="_blank"><LinkedInIcon className={classes.linkedInIcon} /></Link>
             <Link href="https://github.com/EJJung" target="_blank"><GitHubIcon className={classes.githubIcon} /></Link>

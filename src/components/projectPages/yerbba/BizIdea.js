@@ -8,6 +8,11 @@ const BizIdea = () => {
   return (
     <Grid container direction="row" justify="center" alignItems="center">
       <Grid item xs={10}>
+        <Typography variant='body2' gutterBottom>
+          Testing
+        </Typography>
+      </Grid>
+      <Grid item xs={10}>
         <Typography variant='body1' gutterBottom>
           We thought we should focuse on patient for several reasons: HITECH act, ACA, and other acts are still in effect. Patient-centered services seemed promising and were relatively new in the healthcare market. Since Affordable Care Act (ACA) was in effect, traditional healthcare industry have slowly been changed along with the change in reimburse model: from fee-for service model to value based model such as Merit-based Incentive Payment System. Also, the adoption of Electroinc Health Record was accelerated under Health Information Technology for Economic and Clinical Health (HITECH) Act. 
         </Typography>
