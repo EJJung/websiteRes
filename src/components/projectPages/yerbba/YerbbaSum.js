@@ -7,6 +7,7 @@ import BizIdea from './BizIdea';
 import Prototypes from './Prototypes';
 import Product from './Product';
 import ProductLive from './ProductLive';
+import DesignSys from './DesignSys';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
