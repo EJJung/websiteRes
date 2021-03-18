@@ -1,1 +1,1 @@
-This is a personal website.
+It is a collection of personal website.
