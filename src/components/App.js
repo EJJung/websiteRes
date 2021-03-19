@@ -34,12 +34,12 @@ import { NaiveBayesSum } from './projectPages/naiveBayes/naiveBayesSum';
 import { DesignSys } from './projectPages/yerbba/DesignSys';
 
 const App = () => {
-
+  console.log('/websiteRes');
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router history={history}>
-        <Header />
+        {/* <Header /> */}
         <Switch>
           <Route exact path='/' component={MainpageSum}/>
           <Route path='/works' component={WorkSum} />
@@ -59,9 +59,9 @@ const App = () => {
           <Route path='/nlp-grammer' component={CYKParserSum} />
           <Route path='/nlp-word-embeddings' component={WordEmbeddingSum} />
           <Route path='/word-classification' component={NaiveBayesSum} />
-          <Route path='/yerbba-des-sys' component={DesignSys} />
+          <Route path='/websiteRes/yerbba-des-sys' component={DesignSys} />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
       
     </ThemeProvider>
