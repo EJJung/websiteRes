@@ -31,6 +31,7 @@ import { LDASum } from './projectPages/lda/ldaSum';
 import { CYKParserSum } from './projectPages/cykParser/cykParserSum';
 import { WordEmbeddingSum } from './projectPages/wordEmbedding/wordEmbeddingSum';
 import { NaiveBayesSum } from './projectPages/naiveBayes/naiveBayesSum';
+import { DesignSys } from './projectPages/yerbba/DesignSys';
 
 const App = () => {
 
@@ -58,6 +59,7 @@ const App = () => {
           <Route path='/nlp-grammer' component={CYKParserSum} />
           <Route path='/nlp-word-embeddings' component={WordEmbeddingSum} />
           <Route path='/word-classification' component={NaiveBayesSum} />
+          <Route path='/yerbba-des-sys' component={DesignSys} />
         </Switch>
         <Footer />
       </Router>

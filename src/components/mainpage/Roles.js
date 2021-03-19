@@ -3,20 +3,23 @@ import React from 'react';
 import { Typography, Grid, Box } from '@material-ui/core';
 
 import { useStyles } from '../../style/designScheme';
+import DesignIcon from '../../images/icons/designIcon.svg';
+import CodingIcon from '../../images/icons/codingIcon.svg';
+import AnalyticIcon from '../../images/icons/analyticIcon.svg';
 
 const contents =[
   {
-    icon:'/icons/designIcon.svg',
+    icon: DesignIcon,
     title: 'User Experience Designer',
     desc: 'Maintain keen observation, find solution, and bring up effective designs for 7 years. Designed various services including mobile, web, TV, and intengible service.'
   },
   {
-    icon:'/icons/codingIcon.svg',
+    icon: CodingIcon,
     title:'Frontend Developer',
     desc:'Build web application from scratch. Develop and involved in backend and frontend development, especially focused on frontend development.'
   },
   {
-    icon: '/icons/analyticIcon.svg',
+    icon: AnalyticIcon,
     title: 'Data Analyist',
     desc: 'Interested in data analyization using Machine Learning and Natural Language Processing, applying to Python, Keras, Tenserflow.'
   }

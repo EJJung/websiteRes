@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Grid, Hidden } from '@material-ui/core';
 import { Link } from "react-router-dom";
 
+import {ReactComponent as Logo} from '../../images/icons/logo.svg';
 import { useStyles } from '../../style/designScheme';
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
       <div className={classes.header}>
         <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
           <Grid item xs={6} md={10}>
-            <Link to='/'><img src='/icons/logo.svg' alt="logo.svg" style={{width:'3em'}} /></Link>
+            <Link to='/'><Logo width='36px' /></Link>
           </Grid>
           <Grid item xs={3} md={1}>
             <Link to='/works' style={{textDecoration:'none'}}>

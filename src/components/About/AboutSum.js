@@ -4,6 +4,8 @@ import ReactPlayer from 'react-player';
 
 import { useStyles } from '../../style/designScheme';
 import { TileInfo } from './TileInfo';
+import DecoEJ from '../../images/imgs/decoEJ.png';
+import SimpleEJ from '../../images/imgs/photoEJ2.png';
 
 export const AboutSum = () => {
   const classes = useStyles();
@@ -14,21 +16,23 @@ export const AboutSum = () => {
       <Grid container direction='row' spacing={3}>
         <Grid item xs={12} md={7}>
         <Box pt="10%" />
-        <Box ref={hoverRef} >
-        {/* { isHovered ? 
+        {/* <Box ref={hoverRef} >
+        { isHovered ? 
           <img 
-            src='/imgs/decoEJ.png' 
-            alt=''
+            src= {DecoEJ}
+            alt='decoEJ'
             style={{transition:'0.2s'}}
           />
         : <img 
-            src='/imgs/photoEJ2.png'
-            alt=''
+            src={SimpleEJ}
+            alt='SimpleEJ'
             style={{transition:'0.2s'}}
           />
-        } */}
+        }
         <div className={classes.test} />
-        
+        </Box> */}
+        <Box>
+          <img src={SimpleEJ} alt='SimpleEJ' style={{transition:'0.2s'}} />
         </Box>
         </Grid>
         <Grid item xs={12} md={5}>

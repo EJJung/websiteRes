@@ -3,12 +3,27 @@ import PropTypes from 'prop-types';
 import { Typography, Grid, Hidden, Paper, Card, CardActionArea, CardMedia, CardContent, CardActions, withWidth } from '@material-ui/core';
 
 import { useStyles } from '../../style/designScheme';
+import YerbbaIcon from '../../images/portfolios/Yerbba.svg';
+import BrainIcon from '../../images/portfolios/2ndBrain.svg';
+import CorrIcon from '../../images/portfolios/correlation.svg';
+import UpliftIcon from '../../images/portfolios/upLift.svg';
+import EyeGuideIcon from '../../images/portfolios/eyeGuide.svg';
+import BeamsIcon from '../../images/portfolios/beams.svg';
+import HealthhubIcon from '../../images/portfolios/healthHub.svg';
+import MaIcon from '../../images/portfolios/ma.svg';
+import ShahidIcon from '../../images/portfolios/shahid.svg';
+import BxrIcon from '../../images/portfolios/bxr.svg';
+import CrowdSourcingIcon from '../../images/portfolios/crowdSourcing.svg';
+import LdaIcon from '../../images/portfolios/lda.svg';
+import CykIcon from '../../images/portfolios/cykParser.svg';
+import WordembeddingIcon from '../../images/portfolios/wordembedding.svg';
+import ClassifierIcon from '../../images/portfolios/classifier.svg';
 
 export const CardContents = [
   {
     id: 1,
     type: ['UX', 'UI', 'Dev', 'Data'],
-    icon: 'Yerbba.svg',
+    icon: YerbbaIcon,
     name: 'Yerbba',
     url: '/yerbba',
     desc: 'A patient medical information platform that provides personalized report based on own medical records'
@@ -16,7 +31,7 @@ export const CardContents = [
   {
     id:2,
     type: ['UX','UI'],
-    icon: '2ndBrain.svg',
+    icon: BrainIcon,
     name: '2nd Brain',
     url: '/second-brain',
     desc: 'A medical reminder system that reminds teens with chronic illnesses to stay on medication schedule'
@@ -24,7 +39,7 @@ export const CardContents = [
   {
     id: 3,
     type: ['Data'],
-    icon: 'correlation.svg',
+    icon: CorrIcon,
     url: '/sentiment-analysis',
     name: 'Correlation between Sentimant Analysis in Notes of Health Practitioners and Medical Prescription',
     desc: 'Apply NLP methods to healthcare data'
@@ -32,7 +47,7 @@ export const CardContents = [
   {
     id: 4,
     type: ['UX','UI'],
-    icon: 'upLift.svg',
+    icon: UpliftIcon,
     url: '/uplift',
     name: 'UpLift',
     desc: 'A commuter-to-commuter ridesharing service for low-income population'
@@ -40,7 +55,7 @@ export const CardContents = [
   {
     id: 5,
     type: ['UI'],
-    icon: 'eyeGuide.svg',
+    icon: EyeGuideIcon,
     url: '/eye-guide',
     name: 'eyeGuide',
     desc: 'A platform that help patients change their behavior over their glaucoma and remember to take glaucoma medication'
@@ -48,7 +63,7 @@ export const CardContents = [
   {
     id: 6,
     type: ['UX'],
-    icon: 'beams.svg',
+    icon: BeamsIcon,
     url: '/beams',
     name: 'Beams consulting',
     desc: 'A consulting for a platform of participant recruitment program to increase retension rate'
@@ -56,7 +71,7 @@ export const CardContents = [
   {
     id: 7,
     type: ['UX','UI'],
-    icon: 'healthHub.svg',
+    icon: HealthhubIcon,
     url: '/radnet',
     name: 'Radnet.kr',
     desc: 'A health information exchange service that shares medical images and meta data through cloud based sharing and real-time image reading'
@@ -64,7 +79,7 @@ export const CardContents = [
   {
     id: 8,
     type: ['UX','UI'],
-    icon: 'ma.svg',
+    icon: MaIcon,
     url: '/humax-mobile-app',
     name: 'TV - Mobile App 2.0',
     desc: 'Applications to seamlessly enjoy TV contents with multiscreen'
@@ -72,7 +87,7 @@ export const CardContents = [
   {
     id: 9,
     type: ['UI'],
-    icon: 'shahid.svg',
+    icon: ShahidIcon,
     url: '/tv-app-shahid',
     name: 'Shahid TV App',
     desc: 'A live and VOD contents streaming application built in Set top box'
@@ -80,7 +95,7 @@ export const CardContents = [
   {
     id: 10,
     type: ['UI'],
-    icon: 'bxr.svg',
+    icon: BxrIcon,
     url: '/bxr',
     name: 'Boxer HD+2 Default UI',
     desc: 'UI specification for Set top box'
@@ -88,7 +103,7 @@ export const CardContents = [
   {
     id: 11,
     type: ['Data'],
-    icon: 'crowdSourcing.svg',
+    icon: CrowdSourcingIcon,
     url: '/crowdsourcing',
     name: 'Crowdsourcing and Annotation',
     desc: 'Practice of using crowdsourcing: enhance public discourse with crowdsourcing by learning civility in online platform'
@@ -96,7 +111,7 @@ export const CardContents = [
   {
     id: 12,
     type: ['Data'],
-    icon: 'lda.svg',
+    icon: LdaIcon,
     url: '/lda',
     name: 'Latent Dirchlet Allocation',
     desc: 'Practice of topic modeling: LDA - algorithm to assign words to related topic in unsupervised learning'
@@ -104,7 +119,7 @@ export const CardContents = [
   {
     id: 13,
     type: ['Data'],
-    icon: 'cykParser.svg',
+    icon: CykIcon,
     url: '/nlp-grammer',
     name: 'Parse and Write Grammatical Texts',
     desc: 'Practice of building parser: CYK Parser - parse probabilistic context-free grammars and write sentences that grammatically correct'
@@ -112,7 +127,7 @@ export const CardContents = [
   {
     id: 14,
     type: ['Data'],
-    icon: 'wordembedding.svg',
+    icon: WordembeddingIcon,
     url: '/nlp-word-embeddings',
     name: 'Word Embeddings',
     desc: 'Practice of building vocabularies with contextual representations: Word2vec - to find patterns between words that has mutations'
@@ -120,7 +135,7 @@ export const CardContents = [
   {
     id: 15,
     type: ['Data'],
-    icon: 'classifier.svg',
+    icon: ClassifierIcon,
     url: '/word-classification',
     name: 'Classification',
     desc: 'Practice of building a simple classification tool of words: Naive Bayes and Logistic Regression'
@@ -151,7 +166,7 @@ function ProjCard(props) {
           component='img'
           alt={content.name}
           height='140'
-          image={"/portfolios/"+content.icon}
+          image={content.icon}
           title={content.name}
           style={{objectFit:'fill', paddingTop:'2em'}}
           className={hover=== true || width === "xs" ? classes.projOverImg:classes.projOutImg}
@@ -176,36 +191,3 @@ ProjCard.propTypes = {
 };
 
 export default withWidth()(ProjCard);
-// return (
-//   <Paper 
-//     elevation={0} 
-//     onMouseOver={handleMouseOver}
-//     onMouseOut={handleMouseOut}
-//     style={{background:'none'}}
-//   >
-//     <Grid container direction='row' justify='flex-start' alignItems='center' spacing={3}>
-//       <Hidden xsDown>
-//       <Grid item xs={12} className={classes.projCard}>
-//         <img src={"/portfolios/"+content.icon} alt='yerbba' className={hover? classes.projOverImg:classes.projOutImg}/>
-//       </Grid>
-//       <Grid item xs={12}>
-//         <Typography variant='subtitle1' align='center' className={hover? classes.projOverTxt:classes.projOutTxt}>{content.name}</Typography>
-//       <Grid item xs={12}>
-//         <Typography variant='body2' align='center' className={hover? classes.projOverTxt:classes.projOutTxt}>{content.desc}</Typography>
-//       </Grid>
-//       </Grid>
-//       </Hidden>
-//       <Hidden mdUp>
-//       <Grid item xs={12} className={classes.projCard}>
-//         <img src={"/portfolios/"+content.icon} alt='yerbba' className={classes.projOverImg}/>
-//       </Grid>
-//       <Grid item xs={12}>
-//         <Typography variant='subtitle1' align='center' className={classes.projOverTxt}>{content.name}</Typography>
-//       <Grid item xs={12}>
-//         <Typography variant='body2' align='center' className={classes.projOverTxt}>{content.desc}</Typography>
-//       </Grid>
-//       </Grid>
-//       </Hidden>
-//     </Grid>
-//   </Paper>
-// )

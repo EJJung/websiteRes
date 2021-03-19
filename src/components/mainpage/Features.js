@@ -3,6 +3,7 @@ import { Typography, Grid, Box, Link, Chip, Hidden } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 import { useStyles } from '../../style/designScheme';
+import YerbbaImg from '../../images/imgs/yerbba.png';
 
 const featureList = [
   {
@@ -13,14 +14,13 @@ const featureList = [
     desc: 'Know the details of your breast cancer, including treatment options, tests, and all the actions that you should take to get the best care possible. No need to type in your information at all. We take care of everything for you.',
     tags: ["Service Design", "UX","UI","Javascript", "React", "Data Analyzation"],
     detailLink: '/yerbba',
-    externalLink: 'https://yerbba.com',
-    img: '/imgs/yerbba.png'
+    externalLink: 'https://yerbba.com'
   }
 ]
 
 function FeatureSection(props) {
   const classes = useStyles();
-  const { color, overline, title, summary, desc, tags, detailLink, externalLink, img } = props.feature;
+  const { color, overline, title, summary, desc, tags, detailLink, externalLink } = props.feature;
 
   const handleClick = () => {
     console.info('You clicked the Chip.');
@@ -36,7 +36,7 @@ function FeatureSection(props) {
           <Hidden smDown>
           <Grid item md={6}>
             <Box pt="10%" />
-              <img src={img} alt={title} style={{maxWidth:'100%'}} />
+              <img src={YerbbaImg} alt={title} style={{maxWidth:'100%'}} />
           </Grid>
           </Hidden>
           <Grid item xs={12} md={6}>
