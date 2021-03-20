@@ -38,7 +38,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router history={history}>
+      <Router basename='/websiteRes' history={history}>
         <Header />
         <Switch>
           <Route exact path='/' component={MainpageSum}/>
