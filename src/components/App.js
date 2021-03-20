@@ -39,7 +39,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router history={history}>
-        {/* <Header /> */}
+        <Header />
         <Switch>
           <Route exact path='/' component={MainpageSum}/>
           <Route path='/works' component={WorkSum} />
@@ -59,9 +59,9 @@ const App = () => {
           <Route path='/nlp-grammer' component={CYKParserSum} />
           <Route path='/nlp-word-embeddings' component={WordEmbeddingSum} />
           <Route path='/word-classification' component={NaiveBayesSum} />
-          <Route path='/websiteRes/' component={DesignSys} />
+          <Route path='/design-system/' component={DesignSys} />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
       
     </ThemeProvider>
