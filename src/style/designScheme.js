@@ -12,6 +12,9 @@ const initTheme = createMuiTheme({
         secondary: {
             main: "#E27D60"
         },
+        background: {
+            default: "#ffffff"
+        }
     },
     typography: {
       fontFamily: ['"Merriweather"', 'serif', 'Open Sans', 'Work Sans'].join(','),
