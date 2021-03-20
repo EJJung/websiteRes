@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/websiteRes/static/js/main.72f0b089.chunk.js",
-    "main.js.map": "/websiteRes/static/js/main.72f0b089.chunk.js.map",
+    "main.js": "/websiteRes/static/js/main.864b4f12.chunk.js",
+    "main.js.map": "/websiteRes/static/js/main.864b4f12.chunk.js.map",
     "runtime-main.js": "/websiteRes/static/js/runtime-main.74629c7b.js",
     "runtime-main.js.map": "/websiteRes/static/js/runtime-main.74629c7b.js.map",
     "static/js/2.f432a21e.chunk.js": "/websiteRes/static/js/2.f432a21e.chunk.js",
     "static/js/2.f432a21e.chunk.js.map": "/websiteRes/static/js/2.f432a21e.chunk.js.map",
     "index.html": "/websiteRes/index.html",
-    "precache-manifest.a550273952e4cdc6798671e6c4ed3b86.js": "/websiteRes/precache-manifest.a550273952e4cdc6798671e6c4ed3b86.js",
+    "precache-manifest.f28e1a1c3068d09f2b1863e022a4c587.js": "/websiteRes/precache-manifest.f28e1a1c3068d09f2b1863e022a4c587.js",
     "service-worker.js": "/websiteRes/service-worker.js",
     "static/js/2.f432a21e.chunk.js.LICENSE.txt": "/websiteRes/static/js/2.f432a21e.chunk.js.LICENSE.txt",
     "static/media/2ndBrain.svg": "/websiteRes/static/media/2ndBrain.c8ed7f73.svg",
@@ -57,6 +57,6 @@
   "entrypoints": [
     "static/js/runtime-main.74629c7b.js",
     "static/js/2.f432a21e.chunk.js",
-    "static/js/main.72f0b089.chunk.js"
+    "static/js/main.864b4f12.chunk.js"
   ]
 }
