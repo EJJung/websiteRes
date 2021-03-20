@@ -59,7 +59,7 @@ const App = () => {
           <Route path='/nlp-grammer' component={CYKParserSum} />
           <Route path='/nlp-word-embeddings' component={WordEmbeddingSum} />
           <Route path='/word-classification' component={NaiveBayesSum} />
-          <Route path='/websiteRes/yerbba-des-sys' component={DesignSys} />
+          <Route path='/websiteRes/' component={DesignSys} />
         </Switch>
         {/* <Footer /> */}
       </Router>
