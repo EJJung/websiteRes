@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.js": "/websiteRes/static/js/main.29169fe7.chunk.js",
-    "main.js.map": "/websiteRes/static/js/main.29169fe7.chunk.js.map",
+    "main.css": "/websiteRes/static/css/main.32330933.chunk.css",
+    "main.js": "/websiteRes/static/js/main.2fd2bac7.chunk.js",
+    "main.js.map": "/websiteRes/static/js/main.2fd2bac7.chunk.js.map",
     "runtime-main.js": "/websiteRes/static/js/runtime-main.74629c7b.js",
     "runtime-main.js.map": "/websiteRes/static/js/runtime-main.74629c7b.js.map",
-    "static/js/2.c38137d8.chunk.js": "/websiteRes/static/js/2.c38137d8.chunk.js",
-    "static/js/2.c38137d8.chunk.js.map": "/websiteRes/static/js/2.c38137d8.chunk.js.map",
+    "static/js/2.7e4aeb4b.chunk.js": "/websiteRes/static/js/2.7e4aeb4b.chunk.js",
+    "static/js/2.7e4aeb4b.chunk.js.map": "/websiteRes/static/js/2.7e4aeb4b.chunk.js.map",
     "index.html": "/websiteRes/index.html",
-    "precache-manifest.ac0a17412e451ecd7ef7e90512d767e4.js": "/websiteRes/precache-manifest.ac0a17412e451ecd7ef7e90512d767e4.js",
+    "precache-manifest.cc21bd87a202be5787499d0dd7780840.js": "/websiteRes/precache-manifest.cc21bd87a202be5787499d0dd7780840.js",
     "service-worker.js": "/websiteRes/service-worker.js",
-    "static/js/2.c38137d8.chunk.js.LICENSE.txt": "/websiteRes/static/js/2.c38137d8.chunk.js.LICENSE.txt",
+    "static/css/main.32330933.chunk.css.map": "/websiteRes/static/css/main.32330933.chunk.css.map",
+    "static/js/2.7e4aeb4b.chunk.js.LICENSE.txt": "/websiteRes/static/js/2.7e4aeb4b.chunk.js.LICENSE.txt",
     "static/media/2ndBrain.svg": "/websiteRes/static/media/2ndBrain.c8ed7f73.svg",
     "static/media/Yerbba.svg": "/websiteRes/static/media/Yerbba.a3218a64.svg",
     "static/media/analyticIcon.svg": "/websiteRes/static/media/analyticIcon.c060befc.svg",
@@ -49,6 +51,7 @@
     "static/media/pic_18.jpg": "/websiteRes/static/media/pic_18.e94d5ef5.jpg",
     "static/media/pic_19.jpg": "/websiteRes/static/media/pic_19.22125db5.jpg",
     "static/media/pic_20.jpg": "/websiteRes/static/media/pic_20.3758498c.jpg",
+    "static/media/profilephoto1.jpeg": "/websiteRes/static/media/profilephoto1.725bd8b0.jpeg",
     "static/media/shahid.svg": "/websiteRes/static/media/shahid.3716d0e1.svg",
     "static/media/upLift.svg": "/websiteRes/static/media/upLift.ba1d0978.svg",
     "static/media/wordembedding.svg": "/websiteRes/static/media/wordembedding.dee20123.svg",
@@ -56,7 +59,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.74629c7b.js",
-    "static/js/2.c38137d8.chunk.js",
-    "static/js/main.29169fe7.chunk.js"
+    "static/js/2.7e4aeb4b.chunk.js",
+    "static/css/main.32330933.chunk.css",
+    "static/js/main.2fd2bac7.chunk.js"
   ]
 }
