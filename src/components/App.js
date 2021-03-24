@@ -32,6 +32,7 @@ import { CYKParserSum } from './projectPages/cykParser/cykParserSum';
 import { WordEmbeddingSum } from './projectPages/wordEmbedding/wordEmbeddingSum';
 import { NaiveBayesSum } from './projectPages/naiveBayes/naiveBayesSum';
 import { DesignSys } from './projectPages/yerbba/DesignSys';
+import { FirstIterate } from './projectPages/yerbba/Firstiterate';
 
 const App = () => {
   
@@ -60,6 +61,7 @@ const App = () => {
           <Route path='/nlp-word-embeddings' component={WordEmbeddingSum} />
           <Route path='/word-classification' component={NaiveBayesSum} />
           <Route path='/design-system/' component={DesignSys} />
+          <Route path='/first-iterate/' component={FirstIterate} />
         </Switch>
         {/* <Footer /> */}
       </Router>

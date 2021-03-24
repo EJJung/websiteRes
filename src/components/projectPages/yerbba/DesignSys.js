@@ -310,7 +310,7 @@ export const DesignSys = function() {
             Typography Scale
           </Typography>
           <Divider />
-          <Typography variant="h1" className={classes.h1} gutterBottom>
+          <Typography variant="h1" className={classes.h1} style={{fontFamily:'Mukta'}} gutterBottom>
             h1. Heading
           </Typography>
           <Typography variant="h2" className={classes.h2} gutterBottom>

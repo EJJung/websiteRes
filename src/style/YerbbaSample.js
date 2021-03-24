@@ -185,5 +185,15 @@ export const useStyles = makeStyles((theme) => ({
   },
   extendedIcon: {
     marginRight: theme.spacing(1)
+  },
+  profileCardRoot: {
+    maxWidth: 345,
+    height: 'auto'
+  },
+  profileImg: {
+    position: 'relative',
+    width: theme.spacing(3),
+    height: theme.spacing(3),
+    borderRadius: '50%'
   }
 }));
