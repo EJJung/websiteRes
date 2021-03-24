@@ -4,7 +4,7 @@ label {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   display: block;
-  width: 300px;
+  width: auto;
   height: 200px;
   position: relative;
   left: 38%;
