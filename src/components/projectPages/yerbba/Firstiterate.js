@@ -59,7 +59,7 @@ export const FirstIterate = function() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Grid container spacing={2}>
+      <Grid container direction='row' justify='center' spacing={2} style={{maxWidth:'1000px', margin: '0 auto'}} >
         <Grid item xs={4}>
           <Typography variant='body2' className={classes.body2}>* Dashboard Summary with Flip Card</Typography>
           <label>
@@ -80,7 +80,6 @@ export const FirstIterate = function() {
                     </Typography>
                   </Grid>
                 </Grid>
-                
               </div>
               <div class="back">
                 <Grid container spacing={2} style={{height:'30%', marginLeft:'4px'}}>
