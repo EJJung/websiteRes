@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Typography, Grid, Paper, Avatar, Box, InputLabel, MenuItem, FormControl, Select, Accordion, AccordionDetails, AccordionSummary, Breadcrumbs, Link } from '@material-ui/core';
+import { Typography, Grid, Paper, Avatar, Box, InputLabel, MenuItem, FormControl, Select, Accordion, AccordionDetails, AccordionSummary, Breadcrumbs, Link, Divider } from '@material-ui/core';
 import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -9,7 +9,6 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
-    margin: theme.spacing(1),
     minWidth: 160,
   },
   selectEmpty: {
@@ -115,11 +114,11 @@ function SimpleSelect() {
   };
 
   return (
-    <Grid container alignItems='center'>
-      <Grid item xs={4}>
+    <Grid container alignItems='center' justify='flex-start'>
+      <Grid item xs={3}>
         <Typography variant='body2' style={{ fontWeight: 500 }}>Tumor Size</Typography>
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={9}>
         <FormControl variant="outlined" size='small' className={classes.formControl}>
           <InputLabel id="demo-simple-select-outlined-label">Tumor Size</InputLabel>
           <Select
@@ -254,21 +253,24 @@ function CustomSeparator() {
 export const SecondIterate = function () {
   return (
     <Grid container spacing={3}>
-      <Grid item md={4} xs={12}>
+      <Grid item md={4} sm={6} xs={12}>
         <Typography variant='h6' gutterBottom>Card UI</Typography>
         <ProfileCard />
         <Box pb="5%" />
       </Grid>
-      <Grid item md={4} xs={12}>
+      <Grid item md={4} sm={6} xs={12}>
         <Typography variant='h6' gutterBottom>Form Controls</Typography>
         <FormLayoutExample />
+        <Box pb="8px" />
+        <Divider />
+        <Box pb="8px" />
         <SimpleSelect />
         <Box pb="5%" />
         <Typography variant='h6' gutterBottom>Breadcrumbs</Typography>
         <CustomSeparator />
         <Box pb="5%" />
       </Grid>
-      <Grid item md={4} xs={12}>
+      <Grid item md={4} sm={12} xs={12}>
         <Typography variant='h6' gutterBottom>Accordion UI</Typography>
         <ControlledAccordions />
       </Grid>
