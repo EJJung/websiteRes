@@ -76,7 +76,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   h1: {
     fontFamily: "Mukta, sans-serif",
-    fontSize: "6em",
+    fontSize: "5.75em",
     fontWeight: 300,
     letterSpacing: -1.5
   },
