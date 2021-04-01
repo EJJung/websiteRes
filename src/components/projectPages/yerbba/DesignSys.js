@@ -7,7 +7,7 @@ import {
   MyAccordionSummary,
   MyAccordionDetails
 } from "../../../style/YerbbaSample";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
 import {
   Typography,
   Grid,
@@ -37,7 +37,17 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+
+const Styles1 = makeStyles({
+  labelEdit: {
+    height: 'auto',
+    left: 'auto',
+    transform: 'none'
+  },
+});
+
 function RadioButtonsGroup() {
+  const classes = Styles1();
   const [value, setValue] = React.useState("female");
 
   const handleChange = (event) => {
@@ -57,22 +67,26 @@ function RadioButtonsGroup() {
           value="female"
           control={<Radio color="primary" />}
           label="Female"
+          className={classes.labelEdit}
         />
         <FormControlLabel
           value="male"
           control={<Radio color="primary" />}
           label="Male"
+          className={classes.labelEdit}
         />
         <FormControlLabel
           value="other"
           control={<Radio color="primary" />}
           label="Other"
+          className={classes.labelEdit}
         />
         <FormControlLabel
           value="disabled"
           disabled
           control={<Radio />}
           label="(Disabled option)"
+          className={classes.labelEdit}
         />
       </RadioGroup>
     </FormControl>
@@ -80,6 +94,7 @@ function RadioButtonsGroup() {
 }
 
 function CheckboxLabels() {
+  const classes = Styles1();
   const [state, setState] = React.useState({
     checkedA: true,
     checkedB: true,
@@ -100,6 +115,7 @@ function CheckboxLabels() {
             name="checkedA"
           />
         }
+        className={classes.labelEdit}
         label="Secondary"
       />
       <FormControlLabel
@@ -111,21 +127,25 @@ function CheckboxLabels() {
             color="primary"
           />
         }
+        className={classes.labelEdit}
         label="Primary"
       />
       <FormControlLabel
         control={<Checkbox name="checkedC" />}
         label="Uncontrolled"
+        className={classes.labelEdit}
       />
       <FormControlLabel
         disabled
         control={<Checkbox name="checkedD" />}
         label="Disabled"
+        className={classes.labelEdit}
       />
       <FormControlLabel
         disabled
         control={<Checkbox checked name="checkedE" />}
         label="Disabled"
+        className={classes.labelEdit}
       />
       <FormControlLabel
         control={
@@ -134,8 +154,10 @@ function CheckboxLabels() {
             onChange={handleChange}
             name="checkedF"
             indeterminate
+            
           />
         }
+        className={classes.labelEdit}
         label="Indeterminate"
       />
     </FormGroup>
@@ -143,6 +165,7 @@ function CheckboxLabels() {
 }
 
 function SwitchLabels() {
+  const classes = Styles1();
   const [state, setState] = React.useState({
     checkedA: true,
     checkedB: true
@@ -162,6 +185,7 @@ function SwitchLabels() {
             name="checkedA"
           />
         }
+        className={classes.labelEdit}
         label="Secondary"
       />
       <FormControlLabel
@@ -173,14 +197,16 @@ function SwitchLabels() {
             color="primary"
           />
         }
+        className={classes.labelEdit}
         label="Primary"
       />
-      <FormControlLabel control={<Switch />} label="Uncontrolled" />
-      <FormControlLabel disabled control={<Switch />} label="Disabled" />
+      <FormControlLabel control={<Switch />} label="Uncontrolled" className={classes.labelEdit} />
+      <FormControlLabel className={classes.labelEdit} disabled control={<Switch />} label="Disabled" />
       <FormControlLabel
         disabled
         control={<Switch checked />}
         label="Disabled"
+        className={classes.labelEdit}
       />
     </FormGroup>
   );
