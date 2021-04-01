@@ -64,7 +64,7 @@ const initTheme = createMuiTheme({
     }
   },
   typography: {
-    fontFamily: "Mukta, Roboto, sans-serif"
+    fontFamily: "Mukta, sans-serif, Roboto, sans-serif"
   }
 });
 export const theme = responsiveFontSizes(initTheme);
@@ -75,7 +75,7 @@ export const useStyles = makeStyles((theme) => ({
     maxWidth: 500
   },
   h1: {
-    fontFamily: "Mukta",
+    fontFamily: "Mukta, sans-serif",
     fontSize: "6em",
     fontWeight: 300,
     letterSpacing: -1.5
@@ -87,7 +87,7 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: -0.5
   },
   h3: {
-    fontFamily: "Mukta",
+    fontFamily: "Mukta, sans-serif",
     fontSize: "3em",
     fontWeight: 400
   },
