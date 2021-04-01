@@ -254,24 +254,24 @@ export const SecondIterate = function () {
   return (
     <Grid container spacing={3}>
       <Grid item md={4} sm={6} xs={12}>
-        <Typography variant='h6' gutterBottom>Card UI</Typography>
+        <Typography variant='body2' gutterBottom>* Card UI</Typography>
         <ProfileCard />
         <Box pb="5%" />
       </Grid>
       <Grid item md={4} sm={6} xs={12}>
-        <Typography variant='h6' gutterBottom>Form Controls</Typography>
+        <Typography variant='body2' gutterBottom>* Form Controls</Typography>
         <FormLayoutExample />
         <Box pb="8px" />
         <Divider />
         <Box pb="8px" />
         <SimpleSelect />
         <Box pb="5%" />
-        <Typography variant='h6' gutterBottom>Breadcrumbs</Typography>
+        <Typography variant='body2' gutterBottom>* Breadcrumbs</Typography>
         <CustomSeparator />
         <Box pb="5%" />
       </Grid>
       <Grid item md={4} sm={12} xs={12}>
-        <Typography variant='h6' gutterBottom>Accordion UI</Typography>
+        <Typography variant='body2' gutterBottom>* Accordion UI</Typography>
         <ControlledAccordions />
       </Grid>
     </Grid>
