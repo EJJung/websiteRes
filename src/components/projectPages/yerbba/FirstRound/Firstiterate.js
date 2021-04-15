@@ -8,12 +8,12 @@ import AccessibilityNewOutlinedIcon from '@material-ui/icons/AccessibilityNewOut
 
 import { Chart } from "react-google-charts";
 
-import '../../../style/FirstIteration.css';
+import '../../../../style/FirstIteration.css';
 import {
   theme,
   useStyles
-} from "../../../style/YerbbaSample";
-import ProfileImg from '../../../images/portfolios/YerbbaRes/profilephoto1.jpeg';
+} from "../../../../style/YerbbaSample";
+import ProfileImg from '../../../../images/portfolios/YerbbaRes/profilephoto1.jpeg';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

@@ -32,9 +32,10 @@ import { CYKParserSum } from './projectPages/cykParser/cykParserSum';
 import { WordEmbeddingSum } from './projectPages/wordEmbedding/wordEmbeddingSum';
 import { NaiveBayesSum } from './projectPages/naiveBayes/naiveBayesSum';
 import { DesignSys } from './projectPages/yerbba/DesignSys';
-import { FirstIterate } from './projectPages/yerbba/Firstiterate';
+import { FirstIterate } from './projectPages/yerbba/FirstRound/Firstiterate';
 import { SecondIterate } from './projectPages/yerbba/SecondRound/SecondIterate';
 import { DrawerExample } from './projectPages/yerbba/SecondRound/Drawer';
+import { FlipCard } from './projectPages/yerbba/FirstRound/FlipCard';
 
 const App = () => {
   
@@ -64,6 +65,7 @@ const App = () => {
           <Route path='/word-classification' component={NaiveBayesSum} />
           <Route path='/design-system/' component={DesignSys} />
           <Route path='/first-iterate/' component={FirstIterate} />
+          <Route path='/first-iterate-flipCard/' component={FlipCard} />
           <Route path='/second-iterate/' component={SecondIterate} />
           <Route path='/second-iterate-drawer/' component={DrawerExample} />
         </Switch>

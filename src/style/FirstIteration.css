@@ -6,8 +6,9 @@ label {
   display: block;
   width: auto;
   height: 200px;
+  margin-top:16%;
   position: relative;
-  left: 38%;
+  left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -37,7 +38,7 @@ label {
 }
 
 .card .back {
-  margin-top: -70%;
+  margin-top: -28.5%;
   background: rgb(247, 247, 247);
   color: #fff;
   -webkit-transform: rotateX(180deg);
