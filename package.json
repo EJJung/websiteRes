@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.2.1",
     "history": "^4.10.1",
     "react": "^16.14.0",
+    "react-card-flip": "^1.1.0",
     "react-dom": "^16.14.0",
     "react-google-charts": "^3.0.15",
     "react-player": "^2.9.0",
