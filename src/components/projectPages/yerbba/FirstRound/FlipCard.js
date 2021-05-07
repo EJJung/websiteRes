@@ -10,17 +10,14 @@ export const FlipCard = function() {
   const classes = useStyles();
   const [isFlipped, setIsFlipped] = React.useState(false);
 
-  const handleChange = (event, newValue) => {
-    setIsFlipped(newValue);
-  };
-
   return(
     <ThemeProvider theme={theme}>
       <ReactCardFlip 
         isFlipped={isFlipped} 
         flipDirection='horizontal'
+        containerStyle={{width:"380px"}}
       >
-        <Paper style={{backgroundColor:"#f3f3f3"}}>
+        <Paper style={{backgroundColor:"#f3f3f3", margin:"1em"}}>
         <Grid container spacing={2} style={{height:'30%', marginLeft:'4px', padding:'8px'}}>
           <Grid item xs={3}>
             <Avatar area-label='profile' alt="Cindy Baker" src={ProfileImg} style={{height:'3em', width: '3em', borderRadius: '50%'}} />
@@ -38,7 +35,7 @@ export const FlipCard = function() {
         </Grid>
         </Paper>
 
-        <Paper style={{backgroundColor:"#f3f3f3"}}>
+        <Paper style={{backgroundColor:"#f3f3f3", margin:"1em"}}>
         <Grid container spacing={2} style={{height:'30%', marginLeft:'4px', padding:'8px'}}>
           <Grid item xs={3}>
             <Typography variant='subtitle2' color='textPrimary' className={classes.subtitle2} coponent='p'>Family History</Typography>

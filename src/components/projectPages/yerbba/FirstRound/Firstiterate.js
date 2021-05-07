@@ -14,6 +14,7 @@ import {
   useStyles
 } from "../../../../style/YerbbaSample";
 import ProfileImg from '../../../../images/portfolios/YerbbaRes/profilephoto1.jpeg';
+import {FlipCard} from './FlipCard';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,60 +60,13 @@ export const FirstIterate = function() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Grid container direction='row' justify='center' spacing={2} style={{maxWidth:'896px', margin: '0px auto 0px 4em'}} >
-        <Grid item xs={4}>
+      <Grid container direction='row' justify='center' spacing={2} style={{maxWidth:'1000px', margin: '0px auto 0px 4em'}} >
+        <Grid item xs={5}>
           <Typography variant='body2' className={classes.body2}>* Dashboard Summary with Flip Card</Typography>
-          <label>
-            <input type="checkbox" />
-            <div class="card">
-              <div class="front">
-                <Grid container spacing={2} style={{height:'30%', marginLeft:'4px'}}>
-                  <Grid item xs={3}>
-                    <Avatar area-label='profile' alt="Cindy Baker" src={ProfileImg} style={{height:'3em', width: '3em', borderRadius: '50%'}} />
-                  </Grid>
-                  <Grid item xs={8}>
-                    <Typography variant='h6' color='textPrimary' className={classes.h6} coponent='p'>Cindy Baker</Typography> 
-                    <Typography variant='subtitle2' color='textSecondary' className={classes.subtitle2}>55 years old, Female</Typography> 
-                  </Grid>
-                  <Grid item xs={11}>
-                    <Typography variant="body2" color='textSecondary' className={classes.body2}>
-                      First diagnosed on Sep. 2018 and took tests: History and physical exam, diagnostic bilateral mammogram, Pathology review, and determination of ER status. Available to take Genetic counseling and breast MRI if indicated
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </div>
-              <div class="back">
-                <Grid container spacing={2} style={{height:'30%', marginLeft:'4px'}}>
-                  <Grid item xs={3}>
-                    <Typography variant='subtitle2' color='textPrimary' className={classes.subtitle2} coponent='p'>Family History</Typography>
-                  </Grid>
-                  <Grid item xs={9}>
-                    <Typography variant='body2' color='textSecondary' className={classes.body2}>Maternal grandmother - gastric cancer in 60’s.</Typography> 
-                  </Grid>
-                  <Grid item xs={3}>
-                    <Typography variant='subtitle2' color='textPrimary' className={classes.subtitle2} coponent='p'>Mammogram</Typography>
-                  </Grid>
-                  <Grid item xs={9}>
-                    <Typography variant='body2' color='textSecondary' className={classes.body2}>Found abnormality in the left breast.</Typography> 
-                  </Grid>
-                  <Grid item xs={3}>
-                    <Typography variant='subtitle2' color='textPrimary' className={classes.subtitle2} coponent='p'>Medication</Typography>
-                  </Grid>
-                  <Grid item xs={9}>
-                    <Typography variant='body2' color='textSecondary' className={classes.body2}>Multivitamins, Vitamin D, calcium, prn cetirizine and albuterol prn.
-                    </Typography> 
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Typography variant='subtitle2' color='textSecondary' className={classes.subtitle2}>Available to take Genetic counseling and breast MRI if indicated from doctor’s note.
-                    </Typography> 
-                  </Grid>
-                </Grid>
-              </div>
-            </div>
-          </label>
+          <FlipCard />
         </Grid>
-        <Grid item xs={8}>
-          <Typography variant='body2' className={classes.body2}>* Tab Use</Typography>
+        <Grid item xs={7}>
+          <Typography variant='body2' className={classes.body2} gutterBottom>* Tab Use</Typography>
           <Paper square className={classes.root}>
             <Tabs
               value={value}
@@ -141,7 +95,7 @@ export const FirstIterate = function() {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant='body2' className={classes.body2}>Interactive Charts</Typography>
+          <Typography variant='body2' className={classes.body2}>* Interactive Charts</Typography>
           <Chart
             width={'100%'}
             height={'500px'}
